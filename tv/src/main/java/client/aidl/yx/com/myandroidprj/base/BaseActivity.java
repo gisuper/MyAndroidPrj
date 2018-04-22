@@ -19,7 +19,11 @@ public abstract class BaseActivity extends AppCompatActivity {
         findView( );
         initView( );
         initListener( );
+        initData();
     }
+
+    public abstract void initData();
+
     /**
      * 获取字符串资源
      * @param resId
